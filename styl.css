@@ -1,0 +1,220 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #2c3e50 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-bottom: 5vw;
+}
+
+
+
+/* Navigation Styles */
+.NavTl, .NavTl1 {
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    border-radius: 8px;
+    border: 2px solid #c0392b;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2vw;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-content: center;
+    
+    
+}
+
+.NavTl:hover, .NavTl1:hover {
+    background: linear-gradient(135deg, #c0392b 0%, #e74c3c 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4);
+}
+
+.MainNav {
+    position: relative;
+    display: flex;
+    background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+    padding: 1vw;
+    border-radius: 12px;
+    justify-content: space-around;
+    margin-left: 6vw;
+    margin-right: 7vw;
+    margin-top: 2vw;
+    align-content: center;
+    gap: 1vw;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    
+}
+
+/* Main Content Area */
+.Telo {
+    position: relative;
+    background-color: rgba(236, 240, 241, 0.95);
+    border: 0.5vw solid #34495e;
+    border-radius: 12px;
+    margin-left: 7vw;
+    margin-right: 8vw;
+    margin-top: 2vw;
+    padding: 3vw 4vw;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    
+    
+}
+
+/* Headings */
+.MainHeading {
+    color: #2c3e50;
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid #e74c3c;
+    padding-bottom: 15px;
+}
+
+.ContentSection {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    border-left: 5px solid #e74c3c;
+}
+.MediaS{
+    display: grid;
+    grid-template-areas:
+    "Header Header Header"
+    "TextN SpaceN MediaN" 
+    "MediaP SpaceP TextP";
+    grid-template-columns: 3fr 0.5fr 5fr;
+}
+.MediaS h2{
+    grid-area: Header;
+    text-align: center;
+}
+.TextMediaN{
+    grid-area: TextN;
+    
+}
+.TextMediaP{
+    grid-area: TextP;
+    text-align: left;
+    
+}
+
+.VMedN{
+    grid-area: MediaN;
+    width:40vw ;
+    height: 20vw;
+}
+.VMedP{
+    grid-area: MediaP;
+    width:40vw ;
+    height: 20vw;
+}
+
+.ContentSection h2 {
+    color: #e74c3c;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.TextUvod {
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    color: #2c3e50;
+    margin: 0;
+}
+
+/* Footer Styles */
+.Pata {
+    position: fixed;
+    bottom: 10px;
+    left: 6vw;
+    right: 7vw;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+    border-radius: 12px;
+    padding: 0.8vw;
+    gap: 1.5vw;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.5);
+   
+}
+
+.Pata a {
+    display: inline-block;
+    line-height: 0;
+    transition: transform 0.3s ease;
+}
+
+.Pata a:hover {
+    transform: scale(1.15);
+}
+
+.Pata a:first-child {
+    position: absolute;
+    left: 1vw;
+}
+
+.Icon {
+    width: 2.5vw;
+    height: 2.5vw;
+    object-fit: contain;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.3));
+}
+
+/* Responsive Design */
+@media (max-width: 1280px) {
+    .NavTl, .NavTl1 {
+        font-size: 2vw;
+        padding: 1px 1px;
+    }
+
+    .Telo {
+    border: 1vw solid #34495e;
+    border-radius: 12px;
+    margin-left: 7vw;
+    margin-right: 8vw;
+    margin-top: 2vw;
+    padding: 3vw 4vw;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    
+    }
+    .MainHeading {
+        font-size: 5vw;
+        margin-bottom: 4vw;
+        padding-bottom: 2vw;
+        border-bottom: 1vw solid #e74c3c;
+    }
+
+    .ContentSection {
+        margin-bottom: 4vw;
+        padding: 2vw;
+    }
+
+    .ContentSection h2 {
+        font-size:3.5vw;
+        margin-bottom: 2vw;
+    }
+    
+    .TextUvod {
+        font-size: 1.8vw;
+    }
+    
+    .Icon {
+        width: 4vw;
+        height: 4vw;
+    }
+}
