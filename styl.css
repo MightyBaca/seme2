@@ -88,6 +88,11 @@ body {
     border-radius: 8px;
     border-left: 5px solid #e74c3c;
 }
+
+.People{
+    border: 1px solid rgb(192, 192, 192);
+}
+
 .MediaS{
     display: grid;
     grid-template-areas:
@@ -96,6 +101,16 @@ body {
     "MediaP SpaceP TextP";
     grid-template-columns: 3fr 0.5fr 5fr;
 }
+
+.MediaGrid{
+    display: grid;
+    grid-template-areas:
+    "Header Header"
+    "TextN MediaN" 
+    "MediaP TextP";
+    grid-template-columns: 3fr  5fr;
+}
+
 .MediaS h2{
     grid-area: Header;
     text-align: center;
@@ -115,6 +130,18 @@ body {
     list-style-type: none;
     padding-left: 0px;
 }
+.Med{
+    grid-area: MediaP;
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+    justify-self: center;
+    box-shadow: 10px 8px 10px rgba(0, 0, 0, 0.6);
+    
+}
+
+
+
 .VMedN{
     grid-area: MediaN;
     width:40vw ;
@@ -132,6 +159,17 @@ body {
     margin-top: 0;
     margin-bottom: 15px;
     font-weight: bold;
+}
+
+.People h3{
+    color: black;
+    font-size: 22px;
+    margin-top: 0;
+    width: fit-content;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-style: oblique;
+    border-bottom: #2c3e50 dotted;
 }
 
 .TextUvod {
