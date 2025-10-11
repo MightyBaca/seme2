@@ -143,7 +143,10 @@ body {
     box-shadow: 10px 8px 10px rgba(0, 0, 0, 0.6);
     
 }
-
+.IMGtext{
+    height:60vw ;
+    box-shadow: 10px 8px 10px rgba(0, 0, 0, 0.6);
+}
 .Bold{
     font-weight: bold;
 }
@@ -189,6 +192,14 @@ body {
     line-height: 1.8;
     color: #2c3e50;
     margin: 0;
+    margin-bottom: 1vw;
+}
+table, th, td{
+    border:#34495e solid 0.2vw;
+    text-align: center;
+    border-collapse: collapse;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 /* Footer Styles */
