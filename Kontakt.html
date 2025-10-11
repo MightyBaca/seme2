@@ -9,11 +9,12 @@
 
 <body>
     <nav  class="MainNav">
-        <a  href="index.html" class="NavTl1">Úvodná Stránka</a>
-        <a  href="Zak.Inf.html" class="NavTl">Základné Informácie</a>
-        <a  href="Zdroje.html" class="NavTl">Videá k téme</a>
-        <a  href="Ludia.html" class="NavTl">Zaujímavé Osobnosti</a>
-        <a  href="Discip.html" class="NavTl">Disciplíny v skratke</a>
+        <a  href="index.html" class="NavTl1">Úvodná stránka</a>
+        <a href="Zak.Inf.html" class="NavTl1">Základné Informácie</a>
+        <a href="Zdroje.html" class="NavTl">Videá k téme</a>
+        <a href="Ludia.html" class="NavTl">Zaujímavé Osobnosti</a>
+        <a href="Discip.html" class="NavTl">Disciplíny v skratke</a>
+        <a href="Kontakt.html" class="NavTl">Kontakty</a>
     </nav>
 
     <div class="Telo">
@@ -23,18 +24,51 @@
             <iframe referrerpolicy class="VMedN" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2855.202065366791!2d18.076218900000008!3d48.289084700000025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476b3f813f16b071%3A0x91ddbe8213ad307b!2sPRALEZ%20NITRA!5e1!3m2!1ssk!2ssk!4v1759924587617!5m2!1ssk!2ssk"></iframe>
             <div class="TextMediaN">
                 <ul class="TextUvod  KontList">
-                    <li><b>Adresa: </b></li>
-                    <li>Murgašova 8, Nitra, 94910 </li>
-                    <br>
-                    <li><b>Telefonický kontakt:</b></li>
-                    <li>0903 121 332</li>
+                    <li><b>Adresa: </b>
+                        <ul class="SubList">
+                            <li>Murgašova 8, Nitra, 94910 </li>
+                        </ul>
+                    </li>
+                    
+                    <li><b>Telefonický kontakt:</b>
+                        <ul class="SubList">
+                            <li>0903 121 332</li>
+                        </ul>
+                    </li>
+
+                    <li><b>Otváracie hodiny:</b>
+                        <ul class="SubList">
+                            <li><b>Pondelok:</b> 14:00-21:00</li>
+                            <li><b>Utorok-Štvrtok:</b> 10:00-22:00</li>
+                            <li><b>Piatok:</b> 10:00-21:00</li>
+                            <li><b>Sobota-Nedela:</b> 9:00-21:00</li>
+                        </ul>
+                    </li>
+                    
                 </ul>
             </div>
-            
-            
+        </div>
+        <div class="ContentSection">
+            <h2>Nechajte nám odkaz</h2>
+            <form action="" method="get" class="formular">
+                <div class="TextUvod formular">
+                    <label for="Meno">Vaše meno: </label>
+                    <input id="textIn" type="text" name="Meno" >
+                    <label for="Mail" >Váš mail: </label>
+                    <input id="textIn" type="email" name="Mail" required placeholder="jankokral@gmail.com">
+                </div>
+                
+                <div class="TextUvod formular">
+                    <p><label for="Mess" style="text-align: top;">Vaša správa/odkaz: </label></p>
+                    <textarea class="MessA"   name="Mess" id="Mess" required placeholder="Moja správa!"></textarea>
+                </div>
+
+                <div class="TextUvod formular">
+                    <input type="submit" value="Odoslať">
+                </div>
+            </form>
             
         </div>
-        
 
     </div>
 

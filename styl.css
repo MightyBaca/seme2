@@ -130,6 +130,10 @@ body {
     list-style-type: none;
     padding-left: 0px;
 }
+.SubList{
+    font-size: 16px;
+    padding-left: 2vw;
+}
 .Med{
     grid-area: MediaP;
     width: 20vw;
@@ -225,6 +229,21 @@ body {
     filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.3));
 }
 
+label{
+    width: fit-content;
+    margin-right: 1vw;
+}
+input{
+    margin-right: 4vw;
+    font-size: 14px;
+    width: 10vw;
+}
+.MessA{
+    width: 35vw;
+    height:10vw;
+    font-size: 14px;
+}
+
 /* Responsive Design */
 @media (max-width: 1280px) {
     .NavTl, .NavTl1 {
@@ -266,5 +285,14 @@ body {
     .Icon {
         width: 4vw;
         height: 4vw;
+    }
+    .SubList {
+        font-size: 1.2vw;
+    }
+    input{
+        font-size: 1.4vw;
+    }
+    .MessA{
+        font-size: 1.4vw;
     }
 }
