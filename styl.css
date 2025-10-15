@@ -1,4 +1,4 @@
-/* Global Styles */
+
 body {
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body {
 
 
 
-/* Navigation Styles */
+
 .NavTl, .NavTl1 {
     background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
     border-radius: 8px;
@@ -54,7 +54,7 @@ body {
     
 }
 
-/* Main Content Area */
+
 .Telo {
     position: relative;
     background-color: rgba(236, 240, 241, 0.95);
@@ -69,7 +69,7 @@ body {
     
 }
 
-/* Headings */
+
 .MainHeading {
     color: #2c3e50;
     font-size: 42px;
@@ -202,7 +202,7 @@ table, th, td{
     padding-right: 1vw;
 }
 
-/* Footer Styles */
+
 .Pata {
     position: fixed;
     bottom: 10px;
@@ -255,7 +255,7 @@ input{
     font-size: 14px;
 }
 
-/* Responsive Design */
+
 @media (max-width: 1280px) {
     .NavTl, .NavTl1 {
         font-size: 2vw;
