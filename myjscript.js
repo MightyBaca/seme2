@@ -41,18 +41,20 @@ for(var i = 0; i < options.length; i++) {
 function FormValid() {
   // Get the value of the input field with ID: InName
   let x = document.getElementById("InName").value;
-  // If x is empty
+  // If x is empty alert and stop submit
   if (x == "") {
     alert("Name must be filled out");
     return false;
   }
-  let MF=/\S+@\S+\.\S+/;
+  let MF=/\S+@\S+\.\S+/;//regular expression for simple email form
   let y=document.getElementById("InMail").value;
+  //if y doesn't match MF it doesn't have the correct form therefore alert and stop submit
   if(!(MF.test(y))){
     alert("Please fill out email with correct form: 'example@example.ex'");
     return false;
   }
   let z = document.getElementById("Mess").value;
+  // If z is empty alert and stop submit
   if (z == "") {
     alert("Please type in a message");
     return false;
