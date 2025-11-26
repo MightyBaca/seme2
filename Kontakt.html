@@ -51,17 +51,19 @@
         </div>
         <div class="ContentSection">
             <h2>Nechajte nám odkaz</h2>
-            <form action="" method="get" class="formular">
+            <form action="" method="get" class="formular" onsubmit="return FormValid()">
                 <div class="TextUvod formular">
                     <label for="Meno">Vaše meno: </label>
-                    <input id="textIn" type="text" name="Meno" >
+                    <input id="InName" type="text" name="Meno" >
                     <label for="Mail" >Váš mail: </label>
-                    <input id="textIn" type="email" name="Mail" required placeholder="jankokral@gmail.com">
+                    <input id="InMail" type="text" name="Mail"  placeholder="jankokral@gmail.com">
+                    <label for="Uroven">Najvyššia trieda ktorú leziete: </label>
+                    <select id="Vyber_Triedy" name="Uroven"></select>
                 </div>
                 
                 <div class="TextUvod formular">
                     <p><label for="Mess" style="text-align: top;">Vaša správa/odkaz: </label></p>
-                    <textarea class="MessA"   name="Mess" id="Mess" required placeholder="Moja správa!"></textarea>
+                    <textarea class="MessA"   name="Mess" id="Mess"  placeholder="Moja správa!"></textarea>
                 </div>
 
                 <div class="TextUvod formular">
@@ -72,6 +74,6 @@
         </div>
 
     </div>
-
+    <script src="myjscript.js"></script>
 </body>
 </html>
