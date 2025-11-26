@@ -1,3 +1,85 @@
+:root{
+  --bar-width: 48px;        /* collapsed width */
+  --bar-open: 200px;        /* expanded width */
+  --speed: .35s;
+}
+#sidebar{
+  position: sticky;   /* ← changed from fixed */
+  top: 0;
+  float: left;        /* hugs left edge */
+  height: 100vh;
+  width: var(--bar-width);
+  background:#111;
+  opacity: 0.6;
+  color:#fff;
+  overflow:hidden;
+  transition: width var(--speed);
+  z-index: 999;
+}
+#sidebar.open{width: var(--bar-open);}
+
+/* hamburger icon */
+#toggle{
+  position: absolute;
+  top:12px; left:12px;
+  width:24px; height:24px;
+  cursor:pointer;
+  display:flex; flex-direction:column;
+  justify-content:space-between;
+}
+#toggle span{
+  display:block;
+  height:3px;
+  background:#fff;
+  border-radius:2px;
+  transition: var(--speed);
+}
+#sidebar.open #toggle span:nth-child(1){transform:rotate(45deg) translate(5px,5px);}
+#sidebar.open #toggle span:nth-child(2){opacity:0;}
+#sidebar.open #toggle span:nth-child(3){transform:rotate(-45deg) translate(7px,-6px);}
+
+/* nav list – filled by JS */
+#nav{
+  margin:56px 0 0 0;
+  padding:0 12px 24px 12px;
+  list-style:none;
+}
+#nav li{margin:.6rem 0;}
+#nav a{
+  color:#ddd;
+  font-weight: bold;
+  text-decoration:none;
+  font-size:.95rem;
+  display:block;
+  padding:4px 8px;
+  border-radius:4px;
+}
+#nav a:hover{background:#ffffff22;}
+
+/* page content pushed to the right */
+main{
+  padding: 2rem 3rem;
+  transition: margin-left var(--speed); /* optional, can also delete */
+}
+#sidebar.open ~ main{margin-left: var(--bar-open);}
+
+.Telo {
+  transition: margin-left var(--speed);
+}
+#sidebar.open ~ .Telo,
+#sidebar.open  + * + .Telo {
+  margin-left: calc(var(--bar-open) );
+}
+.Pata {
+  transition: margin-left var(--speed);
+}
+#sidebar.open ~ .Pata,
+#sidebar.open  + * + .Pata {
+  margin-left: calc(var(--bar-open) );
+}
+
+
+/*TUTO bez JS*/
 
 body {
     margin: 0;
@@ -206,8 +288,8 @@ table, th, td{
 .Pata {
     position: fixed;
     bottom: 10px;
-    left: 6vw;
-    right: 7vw;
+    left: 14vw;
+    right: 16vw;
     display: flex;
     justify-content: center;
     background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);

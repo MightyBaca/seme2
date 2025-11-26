@@ -9,6 +9,8 @@
 </head>
 
 <body>
+     
+
     <nav  class="MainNav" id="MainNavi">
         <a  href="index.html" class="NavTl1">Úvodná stránka</a>
         <a href="Zak.Inf.html" class="NavTl1">Základné informácie</a>
@@ -17,12 +19,21 @@
         <a href="Discip.html" class="NavTl">Disciplíny v skratke</a>
         <a href="Kontakt.html" class="NavTl">Kontakty</a>
     </nav>
-    
+       <!-- ========= SIDEBAR ========= -->
+    <aside id="sidebar">
+        <div id="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul id="nav"><!-- JS fills here --></ul>
+    </aside>
     <div class="Telo">
         <h1 class="MainHeading">Informácie na začiatok</h1>
         
         <div class="ContentSection">
-            <h2>Vybavenie</h2>
+            <h2 id="Gear">Vybavenie</h2>
             <p class="TextUvod">
                 Väčšina telocviční poskytuje požičoné služby, takže zo začiatku netreba nič kupovať, avšak ak vás šport chytí
                 odporúča sa kúpiť si vlastné lezecké topánky, tzv. lezečky a lezecké magnézium. Odporúča sa to z toho dôvodu, že oboje
@@ -50,7 +61,7 @@
         </div>
 
         <div class="ContentSection">
-            <h2>Telocvične</h2>
+            <h2 id="Gym">Telocvične</h2>
             <p class="TextUvod">
                 Výhoda jenoduchosti disciplíny boudlering zaisťuje, že hustota pokrytia Slovenska telocvičňami je väčšia ako u iných disciplín, i keď často sú kombinované pre 
                 viac druhov lezenia. Príkladnmi takýchto priestorov sú napríklad Pralez v Nitre, alebo K2 v Žiline i Bratislava. 
@@ -63,7 +74,7 @@
         </div>
 
         <div class="ContentSection">
-            <h2>Pred prvým vstupom</h2>
+            <h2 id="FirstTime">Pred prvým vstupom</h2>
             <p class="TextUvod">
                 Pred prvým vstupom je nutné sa registrovať, či už vyplnením formulára alebo cez vybranú aplikáciu. 
                 
@@ -80,7 +91,7 @@
         </div>
 
         <div class="ContentSection">
-            <h2>Náročnosť ciest</h2>
+            <h2 id="Diff">Náročnosť ciest</h2>
             <p class="TextUvod">
                 
                 Existuje mnoho systémov hodnotenia obťiažností ciest, azda najpoužívanejšia je Francúzska, táto udáva obtiažnosť vo forme kombinácie čísla s písmenom.
@@ -103,7 +114,7 @@
         </div>
 
         <div class="ContentSection">
-            <h2>Obtiažnosť cesty a úroveň lezca</h2>
+            <h2 id="Urovne">Obtiažnosť cesty</h2>
 
             <p class="TextUvod">
                 Napriek tomu že náročnosť ciest je veľmi subjektívna vec mnohé telocvične poskytujú z istej miery vlastnú tabuľku klasifikácie bouldrov ich obtiažností. 
@@ -150,5 +161,7 @@
         <a href="https://www.facebook.com/majlstoun" target="_blank"><img class="Icon" src="img/FB.png" alt="Ikona prekliku na facebook"></a>
         <a href="mailto:himynickisgamo@gmail.com"><img class="Icon" src="img/Mail.png" alt="Ikona na odoslanie mailu"></a>
     </footer>
+    
+    <script src="myjscript.js"></script>
 </body>
 </html>
