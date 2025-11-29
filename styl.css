@@ -1,3 +1,26 @@
+
+
+#runnerBox{
+    position:fixed;
+    left:10px;
+    top:0;
+    bottom:0;
+    width:30px;
+    pointer-events:none
+}
+#circle{
+    position:absolute;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background:yellow
+}
+
+
+
+
+
+/*sidebar*/
 :root{
   --bar-width: 48px;        /* collapsed width */
   --bar-open: 200px;        /* expanded width */
