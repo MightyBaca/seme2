@@ -1,5 +1,5 @@
 // true if we are on the site root or on /…/index.html
-const onHome = /(^\/$|\/index\.html$)/.test(location.pathname);
+const onHome = /\/($|index\.html$)/.test(location.pathname);
 
 if (onHome) {
   $(function () {
