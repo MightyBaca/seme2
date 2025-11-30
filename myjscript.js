@@ -1,13 +1,12 @@
-// true if we are on the site root or on /…/index.html
-const onHome = /\/($|index\.html$)/.test(location.pathname);
-
+const page = location.pathname.split('/').pop();
+const onHome = !page || page === 'index.html';
+//circle animation
 if (onHome) {
   $(function () {
     const $c  = $('#circle');
     const h   = $(window).height() - 20;
     const col = ['green', 'purple'];
     let   idx = 0;
-
     function bounce() {
       idx = (idx + 1) % col.length;
       $c.css('background', col[idx])
