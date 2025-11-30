@@ -1,20 +1,21 @@
-const page = location.pathname.split('/').pop();
+// true if we are on the site root or on /…/index.html
+const onHome = /(^\/$|\/index\.html$)/.test(location.pathname);
 
-
-//circle animation
-if (page !== 'index.html') { /* skip */ } else
-  $(function(){
+if (onHome) {
+  $(function () {
     const $c  = $('#circle');
-    const h   = $(window).height()-20;
-    const col = ['green','purple'];
+    const h   = $(window).height() - 20;
+    const col = ['green', 'purple'];
     let   idx = 0;
-    function bounce(){
-      idx = (idx+1)%col.length;
-      $c.css('background',col[idx]);
-      $c.animate({top:(idx%2?h:0)},1500,'swing',bounce);
+
+    function bounce() {
+      idx = (idx + 1) % col.length;
+      $c.css('background', col[idx])
+        .animate({ top: idx % 2 ? h : 0 }, 1500, 'swing', bounce);
     }
     bounce();
   });
+}
 
 /* Build navigation once DOM is ready */
 if (page !== 'Zak.Inf.html') { /* skip */ } else
